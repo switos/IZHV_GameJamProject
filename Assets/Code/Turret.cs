@@ -49,6 +49,7 @@ public class Turret : MonoBehaviour
     {
         if (target == null)
         {
+            anim.SetBool("Shooting", false);
             FindTarget();
             return;
         } 
